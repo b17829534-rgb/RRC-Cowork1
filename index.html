@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>RRC — Co-Working Space</title>
+<link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>  
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="curR"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+  <img src="assets/img/logo/Logo.png" alt="Logo">
+</a>
+<!--RRC <span>Co-Working Space</span> -->
+  <ul class="nav-links">
+    <li><a href="#spaces">Spaces</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#amenities">Amenities</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact-form" class="nav-cta">Book a Tour</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="nav-drawer" id="drawer">
+  <button class="nav-drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+  <a href="#spaces" class="drawer-link">Spaces</a>
+  <a href="#experience" class="drawer-link">Experience</a>
+  <a href="#amenities" class="drawer-link">Amenities</a>
+  <a href="#gallery" class="drawer-link">Gallery</a>
+  <a href="#pricing" class="drawer-link">Pricing</a>
+  <a href="#contact-form" class="drawer-cta">Book a Tour</a>
+</div>
+
+<!-- HERO SLIDER -->
+<section class="hero" id="home">
+  <div class="hero-slides">
+    <div class="slide active">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&auto=format&fit=crop&q=85" alt="Open floor coworking"/>
+      <div class="slide-overlay"></div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&auto=format&fit=crop&q=85" alt="Team collaboration"/>
+      <div class="slide-overlay"></div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&auto=format&fit=crop&q=85" alt="Lounge and café"/>
+      <div class="slide-overlay"></div>
+    </div>
+  </div>
+
+  <!-- Side thumbnails -->
+  <div class="slide-thumbs">
+    <div class="thumb active" data-i="0"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=200&auto=format&fit=crop&q=60" alt=""/></div>
+    <div class="thumb" data-i="1"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&auto=format&fit=crop&q=60" alt=""/></div>
+    <div class="thumb" data-i="2"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=200&auto=format&fit=crop&q=60" alt=""/></div>
+  </div>
+
+  <!-- Hero text -->
+  <div class="hero-content">
+    <div class="hero-label">CO-Working Space in Thanjavur</div>
+    <h1 class="hero-title">Where Bold<br><em>Ideas</em> Find<br>Their Space</h1>
+    <p class="hero-desc">Premium coworking crafted for founders, creators and remote teams who refuse to settle for ordinary.</p>
+    <div class="hero-actions">
+      <a href="#spaces" class="btn-orange">Explore Spaces</a>
+      <a href="#experience" class="btn-outline-w">Our Story →</a>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="slide-dots">
+    <div class="dot active" data-i="0"></div>
+    <div class="dot" data-i="1"></div>
+    <div class="dot" data-i="2"></div>
+  </div>
+
+  <!-- Stats -->
+  <!-- <div class="hero-stats">
+    <div class="hstat"><span class="hstat-n" id="s1">0+</span><span class="hstat-l">Members</span></div>
+    <div class="hstat"><span class="hstat-n" id="s2">0</span><span class="hstat-l">Locations</span></div>
+    <div class="hstat"><span class="hstat-n" id="s3">0%</span><span class="hstat-l">Satisfaction</span></div>
+  </div> -->
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span class="m-item">Hot Desks<span class="m-dot"></span></span><span class="m-item">Private Offices<span class="m-dot"></span></span><span class="m-item">Meeting Rooms<span class="m-dot"></span></span><span class="m-item">Event Spaces<span class="m-dot"></span></span><span class="m-item">24/7 Access<span class="m-dot"></span></span><span class="m-item">10 Gbps WiFi<span class="m-dot"></span></span><span class="m-item">Rooftop Lounge<span class="m-dot"></span></span><span class="m-item">Podcast Studio<span class="m-dot"></span></span><span class="m-item">Hot Desks<span class="m-dot"></span></span><span class="m-item">Private Offices<span class="m-dot"></span></span><span class="m-item">Meeting Rooms<span class="m-dot"></span></span><span class="m-item">Event Spaces<span class="m-dot"></span></span><span class="m-item">24/7 Access<span class="m-dot"></span></span><span class="m-item">10 Gbps WiFi<span class="m-dot"></span></span><span class="m-item">Rooftop Lounge<span class="m-dot"></span></span><span class="m-item">Podcast Studio<span class="m-dot"></span></span>
+  </div>
+</div>
+
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div>
+    <div class="stag reveal">About RRC Co-Working Space</div>
+    <h2 class="about-title reveal d1">More than a workspace,<br>it's your <span>community</span></h2>
+    <p class="about-text reveal d2">We believe outstanding work happens when inspired people share inspired spaces. Every detail of RRC Co-Working Space — the acoustics, the light, the coffee — is curated to help you do the best work of your life.</p>
+    <div class="feat-list reveal d3">
+      <div class="feat-item"><div class="feat-icon">🌐</div>Global network of 50+ partner spaces worldwide</div>
+      <div class="feat-item"><div class="feat-icon">⚡</div>10 Gbps symmetric fibre, zero-downtime guarantee</div>
+      <div class="feat-item"><div class="feat-icon">🎯</div>Dedicated success manager for every member</div>
+      <div class="feat-item"><div class="feat-icon">🤝</div>Weekly events, workshops &amp; founder talks</div>
+    </div>
+  </div>
+  <div class="about-imgs reveal from-right">
+    <div class="a-img"><img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?w=900&auto=format&fit=crop&q=80" alt="Hall"/><div class="a-shine"></div></div>
+    <div class="a-img"><img src="https://images.unsplash.com/photo-1600508774634-4e11d34730e2?w=600&auto=format&fit=crop&q=80" alt="Desk area"/><div class="a-shine"></div></div>
+    <div class="a-img"><img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?w=600&auto=format&fit=crop&q=80" alt="Board room"/><div class="a-shine"></div></div>
+  </div>
+</section>
+<!-- PARALLAX BANNER -->
+<div class="parallax-banner" id="parallaxBanner">
+
+  <!-- The image — moves slower than scroll via JS -->
+  <div class="parallax-bg" id="parallaxBg">
+    <img
+      src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=2000&auto=format&fit=crop&q=90"
+      alt="RRC coworking night view"
+    />
+  </div>
+  <div class="parallax-veil"></div>
+
+  <!-- Floating left card -->
+  <div class="px-card-l">
+    <div class="px-tag">Occupancy Rate</div>
+    <div class="px-val">92%</div>
+    <div class="px-sub">Desks filled this month</div>
+    <div class="px-bar"><div class="px-fill"></div></div>
+  </div>
+
+  <!-- Floating right card -->
+  <div class="px-card-r">
+    <div class="px-r-tag">Members Online</div>
+    <div class="px-r-val">240+</div>
+    <div class="px-r-sub">Right now at RRC Co-Working Space</div>
+    <div class="px-avatars">
+      <div class="px-av">AR</div>
+      <div class="px-av">PM</div>
+      <div class="px-av">SK</div>
+      <div class="px-av">RV</div>
+    </div>
+    <div class="px-r-more">+236 more members active</div>
+  </div>
+
+  <!-- Centre content -->
+  <div class="parallax-inner">
+    <div class="parallax-eyebrow">The RRC Co-Working Space Experience</div>
+    <h2 class="parallax-headline">
+      Built for the<br>
+      <em>Relentless</em><br>
+      Achiever
+    </h2>
+    <p class="parallax-sub">A space that moves with your ambition. From sunrise sprints to late-night launches — RRC Co-Working Space is always open, always ready.</p>
+    <div class="parallax-actions">
+      <a href="#pricing" class="btn-orange">Start Your Journey</a>
+      <a href="#gallery" class="btn-outline-orange">See the Space</a>
+    </div>
+  </div>
+  <!-- Bottom chips -->
+  <!-- <div class="parallax-chips">
+    <div class="p-chip"><span class="p-chip-dot"></span>24 / 7 Access — Always Open</div>
+    <div class="p-chip"><span class="p-chip-dot"></span>10 Gbps Fibre Internet</div>
+    <div class="p-chip"><span class="p-chip-dot"></span>1,200+ Active Members</div>
+    <div class="p-chip"><span class="p-chip-dot"></span>3 Prime Locations</div>
+  </div> -->
+
+  <!-- Scroll cue -->
+  <div class="parallax-cue">
+    <div class="cue-line"></div>
+    <span class="cue-txt">Scroll</span>
+  </div>
+
+</div>
+<!-- ══════════════════════════════════════
+     FLOATING WHATSAPP BOOKING WIDGET
+══════════════════════════════════════ -->
+<div class="wa-root" id="waRoot">
+
+  <!-- Expanded chat bubble panel -->
+  <div class="wa-panel" id="waPanel">
+    <div class="wa-panel-head">
+      <div class="wa-avatar">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="10" r="5" fill="white" opacity=".9"/>
+          <path d="M4 26c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+        </svg>
+        <span class="wa-online-dot"></span>
+      </div>
+      <div class="wa-head-info">
+        <div class="wa-head-name">RRC Hive Coworking</div>
+        <div class="wa-head-status">
+          <span class="wa-blink"></span> Typically replies in minutes
+        </div>
+      </div>
+      <button class="wa-close-btn" id="waClose" aria-label="Close">✕</button>
+    </div>
+
+    <div class="wa-body">
+      <!-- Incoming message bubble -->
+      <div class="wa-msg-wrap">
+        <div class="wa-msg in">
+          <div class="wa-msg-logo">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f26522"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+          </div>
+          <p>👋 Hi there! Ready to find your perfect workspace?</p>
+          <p style="margin-top:8px">Book a <strong>free 1-hour tour</strong> at RRC Hive Coworking and experience the difference yourself 🚀</p>
+          <span class="wa-msg-time">Just now</span>
+        </div>
+      </div>
+
+      <!-- Quick reply chips -->
+      <div class="wa-chips">
+        <button class="wa-chip" onclick="waOpenChat('I want to book a free tour at RRC Coworking')">📅 Book a Free Tour</button>
+        <button class="wa-chip" onclick="waOpenChat('I want to know about your membership plans and pricing')">💼 Membership Plans</button>
+        <button class="wa-chip" onclick="waOpenChat('I am looking for a private office for my team at RRC')">🏢 Private Offices</button>
+        <button class="wa-chip" onclick="waOpenChat('Can I get details about hot desk availability at RRC?')">💻 Hot Desks</button>
+      </div>
+
+      <!-- Custom message input -->
+      <div class="wa-input-row">
+        <input
+          class="wa-input"
+          id="waInput"
+          type="text"
+          placeholder="Type your message…"
+          maxlength="200"
+        />
+        <button class="wa-send-btn" id="waSend" aria-label="Send on WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="wa-footer-note">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 2C6.495 2 2.05 6.444 2.05 12c0 1.895.525 3.659 1.437 5.17L2 22l4.974-1.464A9.956 9.956 0 0012.05 22c5.556 0 10-4.444 10-9.1C22.05 6.444 17.606 2 12.05 2z"/></svg>
+        Continue on WhatsApp
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB trigger button -->
+  <button class="wa-fab" id="waFab" aria-label="Chat on WhatsApp">
+    <!-- WhatsApp SVG icon -->
+    <svg class="wa-fab-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="white" d="M16.002 2.667C8.638 2.667 2.667 8.637 2.667 16c0 2.348.638 4.545 1.744 6.44L2 30.667l8.453-2.351A13.28 13.28 0 0016.002 29.333C23.365 29.333 29.334 23.364 29.334 16c0-7.363-5.969-13.333-13.332-13.333zm0 2.666c5.884 0 10.667 4.783 10.667 10.667 0 5.884-4.783 10.667-10.667 10.667a10.628 10.628 0 01-5.45-1.496l-.39-.236-4.037 1.122 1.08-3.942-.253-.404A10.617 10.617 0 015.334 16c0-5.884 4.784-10.667 10.668-10.667zm-3.11 4.89c-.267 0-.698.1-.996.434-.297.334-1.137 1.111-1.137 2.708s1.164 3.143 1.327 3.36c.163.215 2.278 3.658 5.635 4.985 2.793 1.103 3.358.884 3.963.83.604-.056 1.952-.798 2.227-1.567.274-.77.274-1.43.19-1.567-.082-.136-.3-.218-.63-.382-.33-.163-1.952-.963-2.256-1.073-.304-.108-.526-.163-.747.163-.22.326-.854 1.073-1.045 1.293-.19.219-.38.245-.71.082-.33-.163-1.394-.514-2.655-1.638-1.008-.876-1.686-1.96-1.884-2.288-.19-.326-.02-.502.145-.665.15-.148.33-.381.494-.572.164-.19.218-.326.328-.544.11-.217.055-.407-.027-.571-.083-.163-.748-1.803-1.026-2.466-.272-.653-.548-.565-.748-.576-.19-.01-.41-.012-.628-.012z"/>
+    </svg>
+    <!-- Notification badge -->
+    <span class="wa-badge">1</span>
+    <!-- Ripple rings -->
+    <span class="wa-ring wa-ring-1"></span>
+    <span class="wa-ring wa-ring-2"></span>
+    <!-- Tooltip -->
+    <span class="wa-tooltip">Book via WhatsApp</span>
+  </button>
+
+</div>
+
+<style>
+/* ══════════════════════════════════════
+   WHATSAPP FLOATING WIDGET STYLES
+══════════════════════════════════════ */
+
+/* Root container — fixed bottom-right */
+.wa-root{
+  position:fixed;
+  bottom:32px;right:32px;
+  z-index:9990;
+  display:flex;flex-direction:column;align-items:flex-end;
+  gap:16px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+/* ── FAB BUTTON ── */
+.wa-fab{
+  width:62px;height:62px;border-radius:50%;
+  background:linear-gradient(135deg,#25d366 0%,#1da851 100%);
+  border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+  box-shadow:0 8px 32px rgba(37,211,102,.45),0 2px 8px rgba(0,0,0,.2);
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1), box-shadow .3s;
+  flex-shrink:0;
+}
+.wa-fab:hover{
+  transform:scale(1.12);
+  box-shadow:0 14px 44px rgba(37,211,102,.55),0 4px 12px rgba(0,0,0,.25);
+}
+.wa-fab:active{transform:scale(.96)}
+.wa-fab-icon{width:34px;height:34px;position:relative;z-index:1}
+
+/* Notification badge */
+.wa-badge{
+  position:absolute;top:-4px;right:-4px;
+  width:20px;height:20px;border-radius:50%;
+  background:#f26522;color:#fff;
+  font-size:.62rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  border:2.5px solid #fff;
+  animation:badgePop .4s 2s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes badgePop{from{transform:scale(0)}to{transform:scale(1)}}
+
+/* Pulsing rings */
+.wa-ring{
+  position:absolute;inset:0;border-radius:50%;
+  border:2px solid rgba(37,211,102,.5);
+  animation:ringPulse 2.5s ease-out infinite;
+  pointer-events:none;
+}
+.wa-ring-2{animation-delay:.9s}
+@keyframes ringPulse{
+  0%{transform:scale(1);opacity:.7}
+  100%{transform:scale(1.9);opacity:0}
+}
+
+/* Tooltip */
+.wa-tooltip{
+  position:absolute;right:calc(100% + 14px);top:50%;transform:translateY(-50%);
+  background:#1a1208;color:#fff;
+  font-size:.72rem;font-weight:600;letter-spacing:.04em;
+  white-space:nowrap;padding:7px 14px;border-radius:6px;
+  pointer-events:none;
+  opacity:0;transition:opacity .25s,transform .25s;
+  transform:translateY(-50%) translateX(6px);
+}
+.wa-tooltip::after{
+  content:'';position:absolute;left:100%;top:50%;transform:translateY(-50%);
+  border:6px solid transparent;border-left-color:#1a1208;
+}
+.wa-fab:hover .wa-tooltip{opacity:1;transform:translateY(-50%) translateX(0)}
+
+/* ── CHAT PANEL ── */
+.wa-panel{
+  width:340px;
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 20px 64px rgba(0,0,0,.18),0 4px 16px rgba(0,0,0,.08);
+  overflow:hidden;
+  /* Hidden state */
+  opacity:0;
+  transform:translateY(20px) scale(.95);
+  pointer-events:none;
+  transition:opacity .35s cubic-bezier(.77,0,.18,1),
+             transform .35s cubic-bezier(.77,0,.18,1);
+  transform-origin:bottom right;
+}
+.wa-panel.open{
+  opacity:1;transform:translateY(0) scale(1);pointer-events:all;
+}
+
+/* Panel header */
+.wa-panel-head{
+  background:linear-gradient(135deg,#25d366 0%,#128c4e 100%);
+  padding:18px 20px;
+  display:flex;align-items:center;gap:13px;
+  position:relative;
+}
+.wa-avatar{
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(255,255,255,.2);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;position:relative;
+}
+.wa-online-dot{
+  position:absolute;bottom:1px;right:1px;
+  width:11px;height:11px;border-radius:50%;
+  background:#8eff76;
+  border:2px solid #25d366;
+  animation:dotBreath 2s ease-in-out infinite;
+}
+@keyframes dotBreath{0%,100%{opacity:1}50%{opacity:.55}}
+.wa-head-info{flex:1;min-width:0}
+.wa-head-name{font-weight:700;font-size:.92rem;color:#fff;letter-spacing:-.01em}
+.wa-head-status{font-size:.7rem;color:rgba(255,255,255,.78);margin-top:2px;display:flex;align-items:center;gap:5px}
+.wa-blink{width:6px;height:6px;border-radius:50%;background:#8eff76;display:inline-block;animation:dotBreath 1.4s ease-in-out infinite}
+.wa-close-btn{
+  background:rgba(255,255,255,.18);border:none;
+  width:28px;height:28px;border-radius:50%;
+  color:#fff;font-size:.8rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s;flex-shrink:0;
+}
+.wa-close-btn:hover{background:rgba(255,255,255,.32)}
+
+/* Panel body */
+.wa-body{
+  padding:18px 16px 14px;
+  background:#ece5dd;   /* classic WhatsApp chat bg */
+  background-image:url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h80v80H0z' fill='%23ece5dd'/%3E%3Cpath d='M20 20l40 0M20 40l40 0M20 60l40 0M40 0l0 80M0 0l80 80M80 0L0 80' stroke='%23d5cdc5' stroke-width='.5' opacity='.5'/%3E%3C/svg%3E");
+}
+
+/* Incoming message */
+.wa-msg-wrap{display:flex;justify-content:flex-start;margin-bottom:12px}
+.wa-msg{
+  background:#fff;
+  border-radius:0 12px 12px 12px;
+  padding:12px 14px 8px;
+  max-width:90%;
+  box-shadow:0 1px 4px rgba(0,0,0,.1);
+  font-size:.82rem;line-height:1.6;color:#1a1208;
+  position:relative;
+}
+.wa-msg-logo{
+  display:flex;align-items:center;gap:6px;
+  font-weight:700;font-size:.72rem;color:#25d366;
+  margin-bottom:8px;
+}
+.wa-msg-time{
+  display:block;text-align:right;
+  font-size:.65rem;color:#999;margin-top:6px;
+}
+
+/* Quick reply chips */
+.wa-chips{
+  display:flex;flex-direction:column;gap:8px;
+  margin-bottom:14px;
+}
+.wa-chip{
+  background:#fff;
+  border:1.5px solid #25d366;
+  border-radius:50px;
+  padding:9px 16px;
+  font-size:.78rem;font-weight:600;
+  color:#128c4e;cursor:pointer;text-align:left;
+  transition:background .2s,color .2s,transform .2s;
+  box-shadow:0 2px 6px rgba(0,0,0,.06);
+}
+.wa-chip:hover{
+  background:#25d366;color:#fff;
+  transform:translateX(3px);
+}
+
+/* Input row */
+.wa-input-row{
+  display:flex;gap:8px;align-items:center;
+  margin-bottom:10px;
+}
+.wa-input{
+  flex:1;
+  background:#fff;
+  border:1.5px solid #ddd;
+  border-radius:24px;
+  padding:10px 16px;
+  font-size:.8rem;font-family:inherit;
+  outline:none;transition:border-color .2s;
+  color:#1a1208;
+}
+.wa-input:focus{border-color:#25d366}
+.wa-input::placeholder{color:#bbb}
+.wa-send-btn{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,#25d366,#1da851);
+  border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  box-shadow:0 4px 12px rgba(37,211,102,.4);
+  transition:transform .2s,box-shadow .2s;
+}
+.wa-send-btn:hover{transform:scale(1.1);box-shadow:0 6px 18px rgba(37,211,102,.5)}
+.wa-send-btn:active{transform:scale(.95)}
+
+/* Footer note */
+.wa-footer-note{
+  display:flex;align-items:center;justify-content:center;gap:5px;
+  font-size:.68rem;color:#888;
+}
+
+/* Mobile adjustments */
+@media(max-width:600px){
+  .wa-root{bottom:20px;right:16px}
+  .wa-panel{width:calc(100vw - 32px);max-width:340px}
+  .wa-fab{width:56px;height:56px}
+  .wa-fab-icon{width:30px;height:30px}
+  .wa-tooltip{display:none}
+}
+</style>
+
+<script>
+/* ── WHATSAPP WIDGET ── */
+(function(){
+  const PHONE  = '918015696970'; // ← Replace with your WhatsApp number (country code + number, no + or spaces)
+  const fab    = document.getElementById('waFab');
+  const panel  = document.getElementById('waPanel');
+  const close  = document.getElementById('waClose');
+  const input  = document.getElementById('waInput');
+  const send   = document.getElementById('waSend');
+  const badge  = document.querySelector('.wa-badge');
+
+  function openPanel(){
+    panel.classList.add('open');
+    badge.style.display='none';
+    input.focus();
+  }
+  function closePanel(){ panel.classList.remove('open'); }
+
+  fab.addEventListener('click',()=>panel.classList.contains('open') ? closePanel() : openPanel());
+  close.addEventListener('click',closePanel);
+
+  // Close on outside click
+  document.addEventListener('click',e=>{
+    if(!e.target.closest('.wa-root')) closePanel();
+  });
+
+  // Open WhatsApp with a prefilled message
+  function waOpenChat(msg){
+    const url = `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`;
+    window.open(url,'_blank','noopener');
+  }
+  window.waOpenChat = waOpenChat;
+
+  // Send custom typed message
+  function sendCustom(){
+    const msg = input.value.trim();
+    if(!msg) return;
+    waOpenChat(msg);
+    input.value='';
+  }
+  send.addEventListener('click', sendCustom);
+  input.addEventListener('keydown',e=>{ if(e.key==='Enter') sendCustom(); });
+
+  // Auto-open after 8 seconds on first visit
+  const alreadyOpened = sessionStorage.getItem('wa_opened');
+  if(!alreadyOpened){
+    setTimeout(()=>{ openPanel(); sessionStorage.setItem('wa_opened','1'); }, 8000);
+  }
+})();
+</script>
+<!-- SPACES -->
+<section class="spaces" id="spaces">
+  <div class="spaces-head">
+    <div>
+      <div class="stag reveal">Our Spaces</div>
+      <h2 class="spaces-title reveal d1">Curated for every<br>way you work</h2>
+    </div>
+    <p class="spaces-sub reveal from-right">From solo deep-work to full team off-sites — a perfectly designed environment for every need.</p>
+  </div>
+  <div class="spaces-grid">
+    <div class="s-card reveal d2">
+      <div class="s-card-img"><img src="assets/img/gallery/Private Cabin.jpeg" alt="Private Office"/><div class="s-badge">Best Value</div></div>
+      <div class="s-card-body"><h3 class="s-card-title">Private Cabin</h3><p class="s-card-text">Fully enclosed, acoustically designed suites for teams of 2–20. Brand it, secure it, grow in it.</p><div class="s-card-foot"><div class="s-price">₹12,000 <span>/ month</span></div><a href="#contact-form" class="s-link">→</a></div></div>
+    </div>
+    <div class="s-card reveal d1">
+      <div class="s-card-img"><img src="assets/img/gallery/Meeting Room.jpg" alt="Dedicated Desk"/></div>
+      <div class="s-card-body"><h3 class="s-card-title">Meeting Room</h3><p class="s-card-text">Perfect space for professional meetings and collaborations</p><div class="s-card-foot"><div class="s-price">₹300 <span>/ hour</span></div><a href="#contact-form" class="s-link">→</a></div></div>
+    </div>
+    <div class="s-card reveal d1">
+      <div class="s-card-img"><img src="assets/img/gallery/Coworkspace.jpg" alt="Dedicated Desk"/></div>
+      <div class="s-card-body"><h3 class="s-card-title">Day Pass</h3><p class="s-card-text">Get access to a productive workspace with our flexible day pass</p><div class="s-card-foot"><div class="s-price">₹500 <span>/ day</span></div><a href="#contact-form" class="s-link">→</a></div></div>
+    </div>
+    <div class="s-card reveal d1">
+      <div class="s-card-img"><img src="assets/img/gallery/Seminar.jpg" alt="Dedicated Desk"/></div>
+      <div class="s-card-body"><h3 class="s-card-title">Student Desk</h3><p class="s-card-text">Ideal for students, exam preparation, and online classes</p><div class="s-card-foot"><div class="s-price">₹1,500 <span>/ month</span></div><a href="#contact-form" class="s-link">→</a></div></div>
+    </div>
+    <div class="s-card reveal">
+      <div class="s-card-img"><img src="assets/img/gallery/Tech setup.jpeg" alt="Hot Desk"/><div class="s-badge">Most Popular</div></div>
+      <div class="s-card-body"><h3 class="s-card-title">Hot Desk</h3><p class="s-card-text">A fresh energised seat every day in our vibrant open floor. Perfect for freelancers and digital nomads.</p><div class="s-card-foot"><div class="s-price">₹4,000 <span>/ month</span></div><a href="#contact-form" class="s-link">→</a></div></div>
+    </div>
+    <div class="s-card reveal d1">
+      <div class="s-card-img"><img src="assets/img/gallery/Startup.jpg" alt="Dedicated Desk"/></div>
+      <div class="s-card-body"><h3 class="s-card-title">Dedicated Desk</h3><p class="s-card-text">Your own permanent desk in a shared environment. Lock it, personalise it, own it every day.</p><div class="s-card-foot"><div class="s-price">₹5,000 <span>/ month</span></div><a href="#contact-form" class="s-link">→</a></div></div>
+    </div>
+    
+  </div>
+</section>
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <div class="exp-imgs reveal from-left">
+    <div class="exp-main"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=900&auto=format&fit=crop&q=80" alt="Team at work"/></div>
+    <div class="exp-sec"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&auto=format&fit=crop&q=80" alt="Coffee break"/></div>
+    <div class="exp-pill"><span class="exp-pill-n">5★</span><span class="exp-pill-l">Rated</span></div>
+  </div>
+  <div class="reveal from-right">
+    <div class="stag">The RRC Co-Working Space Difference</div>
+    <h2 class="exp-title">Designed for <span>deep work</span><br>and bold thinking</h2>
+    <p class="exp-body">Every detail at RRC Co-Working Space has been obsessed over — from acoustic panelling to colour temperature. We've engineered an environment that minimises distraction and amplifies your best ideas.</p>
+    <div class="perks">
+      <div class="perk"><span class="perk-icon">☕</span><div class="perk-name">Artisan Café</div><div class="perk-desc">Specialty coffee, healthy snacks and full meals on-site.</div></div>
+      <div class="perk"><span class="perk-icon">🎙️</span><div class="perk-name">Podcast Studio</div><div class="perk-desc">Pro-grade recording with full soundproofing.</div></div>
+      <div class="perk"><span class="perk-icon">🌿</span><div class="perk-name">Biophilic Design</div><div class="perk-desc">Living walls and natural light for mental clarity.</div></div>
+      <div class="perk"><span class="perk-icon">🔒</span><div class="perk-name">24/7 Access</div><div class="perk-desc">Keycard entry, CCTV and secure lockers, always on.</div></div>
+    </div>
+    <a href="#pricing" class="btn-orange">See All Plans</a>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-sec" id="gallery">
+  <div class="gallery-head">
+    <div class="stag reveal">Our Spaces</div>
+    <h2 class="gallery-head-title reveal d1">A space for every mood</h2>
+  </div>
+  <div class="gallery-mosaic">
+    <div class="g-item reveal"><img src="assets/img/gallery/1.jpg" alt="Open floor"/><div class="g-cap">Open Floor</div></div>
+    <div class="g-item reveal d1"><img src="assets/img/gallery/2.jpg" alt="Phone pod"/><div class="g-cap">Phone Pods</div></div>
+    <div class="g-item reveal d2"><img src="assets/img/gallery/3.jpg" alt="Event hall"/><div class="g-cap">Event Hall</div></div>
+    <div class="g-item reveal d3"><img src="assets/img/gallery/4.jpg" alt="Night view"/><div class="g-cap">After Hours</div></div>
+    <div class="g-item reveal d1"><img src="assets/img/gallery/5.jpg" alt="Café bar"/><div class="g-cap">Café Bar</div></div>
+    <div class="g-item reveal d2"><img src="assets/img/gallery/6.jpg" alt="Lounge"/><div class="g-cap">Lounge</div></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     DEEP 3-LAYER PARALLAX SECTION
+     Placed between Gallery ↔ Testimonials
+══════════════════════════════════════════ -->
+<div class="pxs" id="deepPxs">
+
+  <!-- ── LAYER 1 · BACKGROUND (slowest ~30% scroll speed) ── -->
+  <div class="layer-back" id="layerBack">
+    <img
+      src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=2000&auto=format&fit=crop&q=88"
+      alt="RRC coworking space"
+    />
+  </div>
+
+  <!-- ── LAYER 2 · MID  (floating shapes ~55% scroll speed) ── -->
+  <div class="layer-mid" id="layerMid">
+
+    <!-- Floating orange circles -->
+    <div class="pxs-shape" style="width:320px;height:320px;top:-60px;left:-80px;--fd:7s;opacity:.12"></div>
+    <div class="pxs-shape" style="width:180px;height:180px;bottom:60px;right:10%;--fd:9s;opacity:.1"></div>
+    <div class="pxs-shape" style="width:80px;height:80px;top:38%;right:18%;--fd:5s;opacity:.18"></div>
+    <div class="pxs-shape" style="width:52px;height:52px;top:25%;left:22%;--fd:8s;opacity:.2"></div>
+
+    <!-- Dot-grid texture panels -->
+    <div class="pxs-dot-grid" style="top:14%;left:6%;--fd:10s"></div>
+    <div class="pxs-dot-grid" style="bottom:12%;right:8%;--fd:8s;width:120px;height:120px"></div>
+
+    <!-- Orbit rings -->
+    <div class="pxs-ring" style="width:480px;height:480px;top:50%;left:50%;margin:-240px 0 0 -240px;--rr:24s"></div>
+    <div class="pxs-ring" style="width:260px;height:260px;top:50%;left:50%;margin:-130px 0 0 -130px;--rr:16s;animation-direction:reverse"></div>
+
+    <!-- Scan line -->
+    <div class="pxs-line" style="top:50%"></div>
+
+    <!-- SVG desk / person silhouette icons -->
+    <!-- Person silhouette -->
+    <svg class="pxs-icon" style="top:22%;left:8%;--fi:6s;width:52px" viewBox="0 0 40 60" fill="white">
+      <circle cx="20" cy="10" r="8"/>
+      <path d="M6 55 Q6 32 20 32 Q34 32 34 55Z"/>
+    </svg>
+    <!-- Monitor / desk -->
+    <svg class="pxs-icon" style="top:60%;left:12%;--fi:9s;width:60px" viewBox="0 0 64 48" fill="white">
+      <rect x="4" y="4" width="56" height="34" rx="3"/>
+      <rect x="24" y="38" width="16" height="4"/>
+      <rect x="18" y="42" width="28" height="3" rx="1"/>
+    </svg>
+    <!-- WiFi waves -->
+    <svg class="pxs-icon" style="top:28%;right:10%;--fi:7s;width:48px" viewBox="0 0 48 36" fill="none" stroke="white" stroke-width="3" stroke-linecap="round">
+      <path d="M4 18 Q12 4 24 4 Q36 4 44 18"/>
+      <path d="M10 24 Q16 13 24 13 Q32 13 38 24"/>
+      <path d="M17 30 Q20 24 24 24 Q28 24 31 30"/>
+      <circle cx="24" cy="35" r="2" fill="white"/>
+    </svg>
+    <!-- Coffee mug -->
+    <svg class="pxs-icon" style="bottom:24%;right:14%;--fi:8s;width:44px" viewBox="0 0 40 40" fill="white">
+      <rect x="4" y="10" width="24" height="22" rx="3"/>
+      <path d="M28 14 Q38 14 38 22 Q38 30 28 30" fill="none" stroke="white" stroke-width="3"/>
+      <rect x="8" y="32" width="16" height="3" rx="1"/>
+    </svg>
+
+  </div>
+
+  <!-- ── LAYER 3 · FOREGROUND (text — normal to slight speed) ── -->
+  <div class="layer-front" id="layerFront">
+
+    <div class="pxs-eyebrow">Premium Co-Working</div>
+
+    <h2 class="pxs-h1">
+      Work Without<br>
+      <em>Limits</em>
+    </h2>
+
+    <p class="pxs-sub">
+      Experience productivity in a premium co-working space — where world-class
+      infrastructure meets an inspiring community of builders.
+    </p>
+
+    <a href="#contact-form" class="pxs-cta">
+      Book a Free Tour
+      <span class="pxs-cta-arrow">→</span>
+    </a>
+
+    <!-- Trust chips -->
+    <div class="pxs-chips">
+      <div class="pxs-chip"><span class="pxs-cdot"></span>10 Gbps Internet</div>
+      <div class="pxs-chip"><span class="pxs-cdot"></span>24 / 7 Access</div>
+      <div class="pxs-chip"><span class="pxs-cdot"></span>1,200+ Members</div>
+      <div class="pxs-chip"><span class="pxs-cdot"></span>No Lock-in Contract</div>
+    </div>
+
+  </div>
+
+  <!-- Scroll mouse cue -->
+  <div class="pxs-cue" onclick="document.getElementById('testimonials').scrollIntoView({behavior:'smooth'})">
+    <div class="pxs-mouse"><div class="pxs-wheel"></div></div>
+    <span class="pxs-cue-lbl">Scroll</span>
+  </div>
+
+</div>
+
+<!-- TESTIMONIALS v2 — Face Photos + Auto-scroll Carousel -->
+<section class="testi" id="testimonials">
+
+  <div class="testi-head">
+    <div class="testi-head-left">
+      <div class="stag reveal">Member Stories</div>
+      <h2 class="testi-title reveal d1">Real people,<br><span>real results</span></h2>
+    </div>
+    <div class="testi-controls reveal from-right">
+      <button class="tc-btn" id="tcPrev" aria-label="Previous">&#8592;</button>
+      <div class="tc-progress"><div class="tc-bar" id="tcBar"></div></div>
+      <button class="tc-btn" id="tcNext" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
+
+  <!-- ROW 1 — primary cards, scrolls left -->
+  <div class="testi-viewport" id="testiVp">
+    <div class="testi-track" id="testiTrack">
+
+      <div class="tc">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">RRC Co-Working Space completely transformed how our remote team collaborates. The energy here is unlike anything in a traditional office — it's genuinely addictive.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&auto=format&fit=crop&q=80" alt="Arjun Rao"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Arjun Rao</div>
+            <div class="tc-role">Founder &amp; CEO</div>
+            <div class="tc-company">Stackburst.io</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">As a solo designer I was sceptical. The community here has opened more doors than five years of networking events combined. My freelance income tripled.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1494790108755-2616b612b08c?w=200&h=200&auto=format&fit=crop&q=80" alt="Priya Menon"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Priya Menon</div>
+            <div class="tc-role">UX Designer</div>
+            <div class="tc-company">Studio Priya</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">The private offices are premium — better acoustics and build quality than most corporate HQs I've worked from. Worth every single rupee.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&auto=format&fit=crop&q=80" alt="Siddharth Kumar"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Siddharth Kumar</div>
+            <div class="tc-role">VP Engineering</div>
+            <div class="tc-company">Zoyo Technologies</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">The rooftop lounge is where I've had my best brainstorming sessions. Sunsets + fast WiFi + great coffee is an absolute superpower for creativity.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&auto=format&fit=crop&q=80" alt="Nandita Agarwal"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Nandita Agarwal</div>
+            <div class="tc-role">Creative Director</div>
+            <div class="tc-company">Studio N</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">We scaled from 3 to 40 people without ever leaving RRC Co-Working Space. The flexibility and the community are something no traditional lease could ever replicate.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&auto=format&fit=crop&q=80" alt="Ravi Venkat"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Ravi Venkat</div>
+            <div class="tc-role">CEO &amp; Co-founder</div>
+            <div class="tc-company">Morvana Labs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">Switching to RRC Co-Working Space was the best business decision I made this year. The speed of the internet alone saved us from missed deadlines multiple times.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&auto=format&fit=crop&q=80" alt="Meera Krishnan"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Meera Krishnan</div>
+            <div class="tc-role">Product Manager</div>
+            <div class="tc-company">Finlyt Inc.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ROW 2 — smaller cards, scrolls opposite (right→left slower) -->
+  <div class="testi-row2" id="testiVp2">
+    <div class="testi-track2" id="testiTrack2">
+
+      <div class="tc sm">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">The podcast studio is world-class. Recorded our whole season here and the production quality shows.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1463453091185-61582044d556?w=200&h=200&auto=format&fit=crop&q=80" alt="Kiran Desai"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Kiran Desai</div>
+            <div class="tc-role">Podcast Host</div>
+            <div class="tc-company">The Founder Files</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc sm">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">Their team events introduced me to three co-founders. The community ROI here is off the charts.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&auto=format&fit=crop&q=80" alt="Divya Shah"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Divya Shah</div>
+            <div class="tc-role">Startup Founder</div>
+            <div class="tc-company">Grovo Health</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc sm">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">I close more deals now because I bring clients to the RRC Co-Working Space boardroom. It signals you mean business.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&auto=format&fit=crop&q=80" alt="Anand Pillai"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Anand Pillai</div>
+            <div class="tc-role">Sales Director</div>
+            <div class="tc-company">Zenith Ventures</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc sm">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">RRC Co-Working Space feels like a premium hotel lobby but built for work. Every visit is an experience, not just a desk.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&auto=format&fit=crop&q=80" alt="Sneha Iyer"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Sneha Iyer</div>
+            <div class="tc-role">Brand Strategist</div>
+            <div class="tc-company">Bloom Studio</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc sm">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">As an engineer I need silence and speed. RRC Co-Working Space delivers both. Private VLANs are a game-changer.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&auto=format&fit=crop&q=80" alt="Rohan Mehta"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Rohan Mehta</div>
+            <div class="tc-role">Senior Engineer</div>
+            <div class="tc-company">ByteCraft</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc sm">
+        <span class="tc-quote">"</span>
+        <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+        <p class="tc-text">The café menu changes weekly and the food is genuinely good. I stopped ordering Swiggy from the day I joined.</p>
+        <div class="tc-author">
+          <div class="tc-face"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&auto=format&fit=crop&q=80" alt="Lavanya Rao"/></div>
+          <div class="tc-info">
+            <div class="tc-name">Lavanya Rao</div>
+            <div class="tc-role">Content Creator</div>
+            <div class="tc-company">Self-employed</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- dot indicators -->
+  <div class="testi-dots" id="testiDots"></div>
+
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="pricing-head">
+    <div class="stag reveal">Membership Plans</div>
+    <h2 class="pricing-title reveal d1">Simple, honest pricing</h2>
+  </div>
+  <div class="pricing-grid">
+    <div class="p-card reveal">
+      <div class="p-plan">Starter</div><div class="p-amount">₹3,999</div><div class="p-period">per month</div><div class="p-hr"></div>
+      <ul class="p-feats"><li>10 Hot Desk days / month</li><li>4 Meeting room hours</li><li>High-speed WiFi</li><li>Community events</li><li>Café &amp; lounge access</li></ul>
+      <a href="#contact" class="p-btn">Get Started</a>
+    </div>
+    <div class="p-card hot reveal d1">
+      <div class="p-hot-badge">Most Popular</div>
+      <div class="p-plan">Professional</div><div class="p-amount">₹8,999</div><div class="p-period">per month</div><div class="p-hr"></div>
+      <ul class="p-feats"><li>Unlimited Hot Desk</li><li>10 Meeting room hours</li><li>Priority event booking</li><li>Podcast studio — 2 hrs/mo</li><li>Mail handling &amp; storage</li><li>Dedicated desk (add-on)</li></ul>
+      <a href="#contact" class="p-btn">Get Started</a>
+    </div>
+    <div class="p-card reveal d2">
+      <div class="p-plan">Enterprise</div><div class="p-amount">₹24,999</div><div class="p-period">per month</div><div class="p-hr"></div>
+      <ul class="p-feats"><li>Private lockable office</li><li>Unlimited meeting rooms</li><li>Custom branding in space</li><li>Dedicated success manager</li><li>24/7 premium access</li><li>Unlimited podcast studio</li></ul>
+      <a href="#contact" class="p-btn">Contact Sales</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<!-- <div class="cta" id="contact">
+  <div class="cta-circle"></div>
+  <div class="reveal from-left">
+    <div class="cta-label">Ready to start?</div>
+    <h2 class="cta-title">Find your<br>perfect space</h2>
+    <p class="cta-sub">Book a free 1-hour tour and experience RRC Co-Working Space yourself.</p>
+  </div>
+  <div class="cta-right reveal from-right">
+    <a href="#" class="btn-orange-lg">Book a Free Tour</a>
+    <div class="cta-note">No commitment. Just coffee &amp; a conversation.</div>
+  </div>
+</div> -->
+<!-- ══════════════════════════════════════════════
+     CONTACT · BOOK A TOUR FORM  +  GOOGLE MAP
+══════════════════════════════════════════════ -->
+<section class="contact-sec" id="contact-form">
+
+  <!-- Section header -->
+  <div class="cs-header">
+    <div class="stag reveal">Find Us</div>
+    <h2 class="cs-title reveal d1">Book a tour or<br><span>drop us a line</span></h2>
+    <p class="cs-sub reveal d2">Visit one of our spaces, schedule a free walkthrough, or simply say hello. We're always happy to chat about finding the perfect workspace for you.</p>
+  </div>
+
+  <!-- Two-column grid: form left, map right -->
+  <div class="cs-grid">
+
+    <!-- ── LEFT: Contact Form ── -->
+    <div class="cs-form-col reveal from-left">
+
+      <!-- Info pills above form -->
+      <div class="cs-info-pills">
+        <div class="cs-pill">
+          <div class="cs-pill-icon">📍</div>
+          <div>
+            <div class="cs-pill-label">Main Location</div>
+            <div class="cs-pill-val">No 82/6B, Deen Complex, Mary's Corner, Parisutham Nagar, Thanjavur, Tamil Nadu 613001</div>
+          </div>
+        </div>
+        <div class="cs-pill">
+          <div class="cs-pill-icon">📞</div>
+          <div>
+            <div class="cs-pill-label">Phone</div>
+            <div class="cs-pill-val">+91 8015 8045 80</div>
+          </div>
+        </div>
+        <div class="cs-pill">
+          <div class="cs-pill-icon">✉️</div>
+          <div>
+            <div class="cs-pill-label">Email</div>
+            <div class="cs-pill-val">info@rrcworkspace.com</div>
+          </div>
+        </div>
+        <div class="cs-pill">
+          <div class="cs-pill-icon">🕐</div>
+          <div>
+            <div class="cs-pill-label">Open Hours</div>
+            <div class="cs-pill-val">Mon–Sat  8 AM – 10 PM</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── The Form ── -->
+      <form class="cs-form" id="csForm" novalidate>
+        <div class="cs-form-row">
+          <div class="cs-field">
+            <label class="cs-label" for="cf-name">Full Name <span>*</span></label>
+            <input class="cs-input" id="cf-name" type="text" placeholder="Arjun Rao" required autocomplete="name"/>
+            <span class="cs-err" id="err-name">Please enter your name.</span>
+          </div>
+          <div class="cs-field">
+            <label class="cs-label" for="cf-phone">Phone Number <span>*</span></label>
+            <input class="cs-input" id="cf-phone" type="tel" placeholder="+91 98765 43210" required autocomplete="tel"/>
+            <span class="cs-err" id="err-phone">Enter a valid phone number.</span>
+          </div>
+        </div>
+
+        <div class="cs-field">
+          <label class="cs-label" for="cf-email">Email Address <span>*</span></label>
+          <input class="cs-input" id="cf-email" type="email" placeholder="arjun@stackburst.io" required autocomplete="email"/>
+          <span class="cs-err" id="err-email">Enter a valid email address.</span>
+        </div>
+
+        <div class="cs-field">
+          <label class="cs-label">I'm interested in</label>
+          <div class="cs-check-grid">
+            <label class="cs-check-item"><input type="checkbox" name="interest" value="hot-desk"/><span class="cs-checkmark"></span>Hot Desk</label>
+            <label class="cs-check-item"><input type="checkbox" name="interest" value="dedicated"/><span class="cs-checkmark"></span>Dedicated Desk</label>
+            <label class="cs-check-item"><input type="checkbox" name="interest" value="private"/><span class="cs-checkmark"></span>Private Office</label>
+            <label class="cs-check-item"><input type="checkbox" name="interest" value="meeting"/><span class="cs-checkmark"></span>Meeting Rooms</label>
+            <label class="cs-check-item"><input type="checkbox" name="interest" value="virtual"/><span class="cs-checkmark"></span>Virtual Office</label>
+            <label class="cs-check-item"><input type="checkbox" name="interest" value="tour"/><span class="cs-checkmark"></span>Free Tour</label>
+          </div>
+        </div>
+
+        <div class="cs-field">
+          <label class="cs-label" for="cf-location">Preferred Location</label>
+          <div class="cs-select-wrap">
+            <select class="cs-input cs-select" id="cf-location">
+              <option value="">— Select a location —</option>
+              <option>Thanjavur — Mary's Corner</option>
+            </select>
+            <span class="cs-select-arrow">▾</span>
+          </div>
+        </div>
+
+        <div class="cs-field">
+          <label class="cs-label" for="cf-msg">Message</label>
+          <textarea class="cs-input cs-textarea" id="cf-msg" rows="4" placeholder="Tell us anything — team size, visit date, questions…"></textarea>
+        </div>
+
+        <!-- Preferred tour date -->
+        <div class="cs-field">
+          <label class="cs-label" for="cf-date">Preferred Tour Date</label>
+          <input class="cs-input" id="cf-date" type="date"/>
+        </div>
+
+         <a href="https://wa.me/+918015696970?text=Hello%20I%20want%20to%20contact%20you" target="_blank" class="message">
+  <button type="button" class="cs-submit" id="csSubmit">
+   
+    <span class="cs-submit-text">Send Message</span>
+    <span class="cs-submit-icon">→</span>
+
+    <svg class="cs-spinner" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="10" stroke="rgba(255,255,255,.3)" stroke-width="2.5"/>
+      <path d="M12 2a10 10 0 0 1 10 10" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    
+  </button>
+</a>
+
+        <!-- Success state -->
+        <div class="cs-success" id="csSuccess">
+          <div class="cs-success-icon">✓</div>
+          <div class="cs-success-title">We got your message!</div>
+          <div class="cs-success-sub">Our team will reach out within 2 hours. See you soon at RRC Hive Coworking Space!</div>
+        </div>
+      </form>
+    </div>
+
+    <!-- ── RIGHT: Map + location tabs ── -->
+    <div class="cs-map-col reveal from-right">
+
+      <!-- Location tabs -->
+      <div class="cs-map-tabs">
+        <button class="cs-tab active" data-city="coimbatore">Thanjavur</button>
+      </div>
+
+      <!-- Map iframes — one per city -->
+      <div class="cs-map-wrap">
+        <!-- Thanjavur — Convent -->
+        <iframe
+          class="cs-map active"
+          id="map-coimbatore"
+          title="RRCs Coimbatore"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4557080229006!2d79.13827177480489!3d10.776366989372395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab968786be449%3A0xf3215151eb7dfc74!2sRRC%20Academy%20NEET-JEE-CBSE-State%20Board%20Coaching%20Centre!5e0!3m2!1sen!2sin!4v1774436110398!5m2!1sen!2sin"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Address card floating over map -->
+      <div class="cs-addr-card" id="csAddrCard">
+        <div class="cs-addr-name" id="csAddrName">RRC Hive Coworking Space — Thanjavur</div>
+        <div class="cs-addr-line" id="csAddrLine">No 82/6B, Deen Complex, Mary's Corner, Parisutham Nagar, Thanjavur, Tamil Nadu 613001</div>
+        <a class="cs-dir-btn" id="csDirBtn" href="https://goo.gl/maps/coimbatore" target="_blank" rel="noopener">
+          Get Directions
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 3L3 10.5l6.75 2.75L21 3zm0 0l-7.75 11.25L10.5 8.25 21 3z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STYLES for contact section -->
+<style>
+/* ══════════════════════════════════════════════
+   CONTACT SECTION
+══════════════════════════════════════════════ */
+.contact-sec{
+  padding:110px 64px;
+  background:var(--off-white);
+  position:relative;
+  overflow:hidden;
+}
+/* decorative bg circle */
+.contact-sec::before{
+  content:'';position:absolute;
+  top:-160px;right:-160px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(242,101,34,.08) 0%,transparent 65%);
+  pointer-events:none;
+}
+
+/* header */
+.cs-header{text-align:center;margin-bottom:72px}
+.cs-header .stag{justify-content:center;margin-bottom:12px}
+.cs-title{font-family:'DM Sans',sans-serif;font-size:clamp(2rem,3vw,3.2rem);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-bottom:16px}
+.cs-title span{color:var(--orange)}
+.cs-sub{font-size:.95rem;line-height:1.8;color:var(--muted);max-width:560px;margin:0 auto}
+
+/* two-col grid */
+.cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+
+/* ── info pills ── */
+.cs-info-pills{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px}
+.cs-pill{
+  display:flex;align-items:center;gap:12px;
+  background:#fff;border:1.5px solid var(--border);
+  border-radius:12px;padding:14px 16px;
+  transition:border-color .3s,box-shadow .3s;
+}
+.cs-pill:hover{border-color:var(--orange);box-shadow:0 4px 16px rgba(242,101,34,.1)}
+.cs-pill-icon{font-size:1.3rem;flex-shrink:0}
+.cs-pill-label{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cs-pill-val{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.82rem;color:var(--ink);margin-top:2px}
+
+/* ── form ── */
+.cs-form{display:flex;flex-direction:column;gap:20px}
+.cs-form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cs-field{display:flex;flex-direction:column;gap:7px}
+.cs-label{font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--body)}
+.cs-label span{color:var(--orange)}
+.cs-input{
+  background:#fff;border:1.5px solid var(--border);
+  border-radius:8px;padding:12px 16px;
+  font-size:.88rem;font-family:'Plus Jakarta Sans',sans-serif;
+  color:var(--ink);outline:none;
+  transition:border-color .25s,box-shadow .25s;
+  width:100%;
+}
+.cs-input:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(242,101,34,.12)}
+.cs-input.error{border-color:#e53e3e}
+.cs-err{font-size:.72rem;color:#e53e3e;display:none}
+.cs-field.has-error .cs-err{display:block}
+.cs-field.has-error .cs-input{border-color:#e53e3e}
+.cs-textarea{resize:vertical;min-height:100px}
+
+/* custom select */
+.cs-select-wrap{position:relative}
+.cs-select{appearance:none;cursor:pointer;padding-right:40px}
+.cs-select-arrow{position:absolute;right:14px;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--muted);font-size:.9rem}
+
+/* checkboxes */
+.cs-check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cs-check-item{
+  display:flex;align-items:center;gap:9px;
+  font-size:.82rem;color:var(--body);cursor:pointer;
+  padding:10px 12px;
+  background:#fff;border:1.5px solid var(--border);
+  border-radius:8px;transition:border-color .2s,background .2s;
+  user-select:none;
+}
+.cs-check-item:hover{border-color:var(--orange);background:var(--orange-pale)}
+.cs-check-item input{display:none}
+.cs-checkmark{
+  width:18px;height:18px;border-radius:4px;
+  border:1.5px solid var(--border);background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;transition:background .2s,border-color .2s;
+  font-size:.6rem;color:#fff;
+}
+.cs-check-item input:checked ~ .cs-checkmark{background:var(--orange);border-color:var(--orange);content:'✓'}
+.cs-check-item input:checked ~ .cs-checkmark::after{content:'✓'}
+.cs-check-item:has(input:checked){border-color:var(--orange);background:var(--orange-pale)}
+
+/* submit button */
+.cs-submit{
+  background:var(--orange);color:#fff;
+  border:none;border-radius:8px;
+  padding:16px 36px;
+  font-family:'DM Sans',sans-serif;font-weight:700;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  box-shadow:0 6px 24px rgba(242,101,34,.35);
+  transition:background .3s,transform .3s,box-shadow .3s,gap .3s;
+  position:relative;overflow:hidden;
+}
+.cs-submit::before{content:'';position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);transform:skewX(-20deg);transition:left .5s}
+.cs-submit:hover::before{left:130%}
+.cs-submit:hover{background:var(--orange-lt);transform:translateY(-2px);box-shadow:0 10px 36px rgba(242,101,34,.45);gap:14px}
+.cs-submit:active{transform:scale(.97)}
+.cs-submit-icon{font-size:1rem;transition:transform .3s}
+.cs-submit:hover .cs-submit-icon{transform:translateX(3px)}
+.cs-spinner{width:20px;height:20px;display:none;animation:spin360 .8s linear infinite}
+@keyframes spin360{to{transform:rotate(360deg)}}
+.cs-submit.loading .cs-submit-text,.cs-submit.loading .cs-submit-icon{display:none}
+.cs-submit.loading .cs-spinner{display:block}
+.cs-submit.loading{pointer-events:none;opacity:.8}
+.message{
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* keeps your button color */
+}
+
+/* success state */
+.cs-success{
+  display:none;flex-direction:column;align-items:center;gap:10px;
+  padding:32px;text-align:center;
+  background:linear-gradient(135deg,rgba(242,101,34,.06),rgba(242,101,34,.02));
+  border:1.5px solid rgba(242,101,34,.2);
+  border-radius:12px;
+}
+.cs-success.show{display:flex}
+.cs-success-icon{width:52px;height:52px;border-radius:50%;background:var(--orange);color:#fff;font-size:1.4rem;display:flex;align-items:center;justify-content:center;font-weight:800}
+.cs-success-title{font-family:'DM Sans',sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink)}
+.cs-success-sub{font-size:.85rem;color:var(--muted);line-height:1.65}
+
+/* ── map column ── */
+.cs-map-tabs{
+  display:flex;gap:8px;margin-bottom:16px;
+  background:#fff;padding:6px;border-radius:10px;
+  border:1.5px solid var(--border);width:fit-content;
+}
+.cs-tab{
+  padding:9px 22px;border-radius:7px;
+  border:none;background:transparent;
+  font-family:'DM Sans',sans-serif;font-weight:700;font-size:.8rem;
+  color:var(--muted);cursor:pointer;
+  transition:background .25s,color .25s;
+}
+.cs-tab.active{background:var(--orange);color:#fff;box-shadow:0 4px 12px rgba(242,101,34,.3)}
+.cs-tab:hover:not(.active){background:var(--orange-pale);color:var(--orange)}
+
+.cs-map-wrap{position:relative;border-radius:16px;overflow:hidden;height:460px;box-shadow:0 12px 40px rgba(26,18,8,.12)}
+.cs-map{
+  position:absolute;inset:0;width:100%;height:100%;border:none;
+  opacity:0;transition:opacity .4s;pointer-events:none;
+}
+.cs-map.active{opacity:1;pointer-events:all}
+
+/* floating address card */
+.cs-addr-card{
+  margin-top:16px;
+  background:#fff;border:1.5px solid var(--border);
+  border-radius:12px;padding:18px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  box-shadow:0 4px 16px rgba(26,18,8,.06);
+  transition:border-color .3s;
+}
+.cs-addr-card:hover{border-color:var(--orange)}
+.cs-addr-name{font-family:'DM Sans',sans-serif;font-weight:800;font-size:.92rem;color:var(--ink)}
+.cs-addr-line{font-size:.78rem;color:var(--muted);margin-top:3px;line-height:1.5}
+.cs-dir-btn{
+  display:inline-flex;align-items:center;gap:6px;white-space:nowrap;
+  background:var(--orange);color:#fff;
+  padding:9px 18px;border-radius:6px;
+  font-family:'DM Sans',sans-serif;font-weight:700;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;
+  text-decoration:none;transition:background .3s,transform .2s;flex-shrink:0;
+}
+.cs-dir-btn:hover{background:var(--orange-lt);transform:translateY(-1px)}
+
+/* Responsive */
+@media(max-width:1024px){
+  .contact-sec{padding:80px 28px}
+  .cs-grid{grid-template-columns:1fr;gap:48px}
+  .cs-info-pills{grid-template-columns:1fr 1fr}
+  .cs-check-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .contact-sec{padding:60px 20px}
+  .cs-title{font-size:1.7rem}
+  .cs-info-pills{grid-template-columns:1fr}
+  .cs-form-row{grid-template-columns:1fr}
+  .cs-check-grid{grid-template-columns:1fr 1fr}
+  .cs-map-wrap{height:300px}
+  .cs-addr-card{flex-direction:column;align-items:flex-start}
+  .cs-map-tabs{width:100%;justify-content:stretch}
+  .cs-tab{flex:1;text-align:center;padding:9px 8px;font-size:.72rem}
+}
+</style>
+
+<!-- JS for contact section -->
+<script>
+/* ── CONTACT FORM + MAP ── */
+(function(){
+
+  /* Map tab switching */
+  const tabs = document.querySelectorAll('.cs-tab');
+  const maps = document.querySelectorAll('.cs-map');
+
+  const addrData = {
+    coimbatore:{name:'RRC — RS Puram',line:'42, Cross Cut Road, RS Puram, Coimbatore — 641 002',dir:'https://maps.google.com/?q=RS+Puram,+Coimbatore'},
+    chennai:   {name:'RRC — T-Nagar', line:'18, Usman Road, T-Nagar, Chennai — 600 017',          dir:'https://maps.google.com/?q=T+Nagar,+Chennai'},
+    bangalore: {name:'RRC — Indiranagar',line:'100 Feet Road, HAL 2nd Stage, Indiranagar, Bangalore — 560 038',dir:'https://maps.google.com/?q=Indiranagar,+Bangalore'},
+  };
+
+  tabs.forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      const city = tab.dataset.city;
+      tabs.forEach(t=>t.classList.remove('active'));
+      maps.forEach(m=>m.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('map-'+city).classList.add('active');
+      // update address card
+      const d = addrData[city];
+      document.getElementById('csAddrName').textContent = d.name;
+      document.getElementById('csAddrLine').textContent = d.line;
+      document.getElementById('csDirBtn').href = d.dir;
+    });
+  });
+
+  /* Form validation + fake submit animation */
+  const form    = document.getElementById('csForm');
+  const btn     = document.getElementById('csSubmit');
+  const success = document.getElementById('csSuccess');
+
+  function validateEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)}
+  function validatePhone(v){return v.replace(/\D/g,'').length>=8}
+
+  function setFieldError(id, errId, show){
+    const field = document.getElementById(id)?.closest('.cs-field');
+    if(!field) return;
+    field.classList.toggle('has-error', show);
+  }
+
+  form.addEventListener('submit', e=>{
+    e.preventDefault();
+    const name  = document.getElementById('cf-name').value.trim();
+    const phone = document.getElementById('cf-phone').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+
+    let ok = true;
+    setFieldError('cf-name','err-name',  !name);  if(!name)  ok=false;
+    setFieldError('cf-phone','err-phone', !validatePhone(phone)); if(!validatePhone(phone)) ok=false;
+    setFieldError('cf-email','err-email', !validateEmail(email)); if(!validateEmail(email)) ok=false;
+
+    if(!ok) return;
+
+    /* Simulate sending */
+    btn.classList.add('loading');
+    setTimeout(()=>{
+      btn.classList.remove('loading');
+      btn.style.display = 'none';
+      success.classList.add('show');
+      form.querySelectorAll('.cs-input,.cs-textarea,.cs-select').forEach(el=>el.disabled=true);
+    }, 1800);
+  });
+
+  /* Remove error on input */
+  ['cf-name','cf-phone','cf-email'].forEach(id=>{
+    document.getElementById(id)?.addEventListener('input',()=>{
+      document.getElementById(id).closest('.cs-field').classList.remove('has-error');
+    });
+  });
+
+  /* Checkbox visual tick */
+  document.querySelectorAll('.cs-check-item input').forEach(cb=>{
+    cb.addEventListener('change',()=>{
+      const mark = cb.nextElementSibling;
+      mark.textContent = cb.checked ? '✓' : '';
+    });
+  });
+
+})();
+// whatsapp message
+document.getElementById("csSubmit").addEventListener("click", function () {
+
+  // Get values
+  let name = document.getElementById("cf-name").value;
+  let phone = document.getElementById("cf-phone").value;
+  let email = document.getElementById("cf-email").value;
+  let location = document.getElementById("cf-location").value;
+  let message = document.getElementById("cf-msg").value;
+  let date = document.getElementById("cf-date").value;
+
+  // Get checkbox values
+  let interests = [];
+  document.querySelectorAll('input[name="interest"]:checked').forEach((el) => {
+    interests.push(el.value);
+  });
+
+  // Basic validation
+  if (!name || !phone || !email) {
+    alert("Please fill required fields!");
+    return;
+  }
+
+  // Format message
+  let fullMessage =
+`*New Enquiry*
+-----------------------
+*Name:* ${name}
+*Phone:* ${phone}
+*Email:* ${email}
+*Interest:* ${interests.join(", ")}
+*Location:* ${location}
+*Date:* ${date}
+*Message:* ${message}`;
+
+  // Encode message
+  let encodedMessage = encodeURIComponent(fullMessage);
+
+  // Your WhatsApp number (no +)
+  let whatsappNumber = "918015696970";
+
+  // Open WhatsApp
+  let url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+  window.open(url, "_blank");
+
+});
+</script>
+
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-top">
+    <div>
+      <span class="foot-logo">
+        <a href="#" class="nav-logo">
+           <img src="assets/img/logo/Logo.png" alt="Logo">
+        </a>
+      </span></span>
+      <p class="foot-tag">Premium coworking spaces built for the ambitious. Where ideas meet infrastructure.</p>
+      <div class="foot-social">
+        <a href="#" class="soc">𝕏</a><a href="#" class="soc">in</a><a href="#" class="soc">ig</a><a href="#" class="soc">yt</a>
+      </div>
+    </div>
+    <div><div class="foot-col-title">Spaces</div><ul class="foot-links"><li><a href="#">Hot Desks</a></li><li><a href="#">Dedicated Desks</a></li><li><a href="#">Private Offices</a></li><li><a href="#">Meeting Rooms</a></li><li><a href="#">Event Spaces</a></li></ul></div>
+    <div><div class="foot-col-title">Company</div><ul class="foot-links"><li><a href="#">About Us</a></li><li><a href="#">Community</a></li><li><a href="#">Gallery</a></li><li><a href="#">Our Spaces</a></li><li><a href="#"></a></li></ul></div>
+    <div><div class="foot-col-title">Contact US</div><ul class="foot-links"><li><a href="#">Thanjavur</a></li><li><a href="#">+91 8015 8045 80</a></li><li><a href="#"> info@rrcworkspace.com</a></li></ul></div>
+  </div>
+  <div class="foot-bottom">
+    <span class="foot-copy">© 2026 Branzyne. All rights reserved.</span>
+    <div class="foot-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
