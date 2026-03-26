@@ -320,4 +320,3 @@ const revObs = new IntersectionObserver(entries => {
 },{threshold:0.12, rootMargin:'0px 0px -55px 0px'});
 
 revEls.forEach(el => revObs.observe(el));
-
