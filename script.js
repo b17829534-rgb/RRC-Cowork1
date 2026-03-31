@@ -1,19 +1,5 @@
 /* CURSOR */
 /* ── CUSTOM CURSOR (mouse devices only) ── */
-const isTouchOnly = !window.matchMedia('(hover:hover) and (pointer:fine)').matches;
-const cur = document.getElementById('cur');
-const curR = document.getElementById('curR');
-
-if (!isTouchOnly) {
-  let mx = 0, my = 0, rx = 0, ry = 0;
-
-  // Track mouse position — move dot cursor instantly
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX;
-    my = e.clientY;
-    cur.style.left = mx + 'px';
-    cur.style.top  = my + 'px';
-  });
 
   // Ring follows with smooth lag via RAF
   (function loop() {
