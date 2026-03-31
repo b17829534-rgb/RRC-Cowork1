@@ -1,12 +1,45 @@
 /* CURSOR */
-const cur=document.getElementById('cur'),curR=document.getElementById('curR');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
-(function loop(){rx+=(mx-rx)*.11;ry+=(my-ry)*.11;curR.style.left=rx+'px';curR.style.top=ry+'px';requestAnimationFrame(loop);})();
-document.querySelectorAll('a,button,.s-card,.perk,.g-item,.t-card').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cur.style.width='20px';cur.style.height='20px';curR.style.width='60px';curR.style.height='60px';});
-  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';curR.style.width='38px';curR.style.height='38px';});
-});
+/* ── CUSTOM CURSOR (mouse devices only) ── */
+const isTouchOnly = !window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+const cur = document.getElementById('cur');
+const curR = document.getElementById('curR');
+
+if (!isTouchOnly) {
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  // Track mouse position — move dot cursor instantly
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX;
+    my = e.clientY;
+    cur.style.left = mx + 'px';
+    cur.style.top  = my + 'px';
+  });
+
+  // Ring follows with smooth lag via RAF
+  (function loop() {
+    rx += (mx - rx) * 0.11;
+    ry += (my - ry) * 0.11;
+    curR.style.left = rx + 'px';
+    curR.style.top  = ry + 'px';
+    requestAnimationFrame(loop);
+  })();
+
+  // Expand on interactive elements
+  document.querySelectorAll('a, button, .sp-card, .perk, .gal-item, .tc, .cs-pill, .wa-chip').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cur.style.width  = '20px';
+      cur.style.height = '20px';
+      curR.style.width  = '58px';
+      curR.style.height = '58px';
+    });
+    el.addEventListener('mouseleave', () => {
+      cur.style.width  = '10px';
+      cur.style.height = '10px';
+      curR.style.width  = '38px';
+      curR.style.height = '38px';
+    });
+  });
+}
 
 /* NAV */
 const nav=document.getElementById('nav');
