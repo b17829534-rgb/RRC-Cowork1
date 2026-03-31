@@ -1,59 +1,5 @@
 /* CURSOR */
 /* ── CUSTOM CURSOR (mouse devices only) ── */
-const cur = document.getElementById('cursor');
-    const ring = document.getElementById('cursor-ring');
-    let mx = 0, my = 0, rx = 0, ry = 0;
- 
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
- 
-    function animCursor() {
-      cur.style.left  = mx + 'px';
-      cur.style.top   = my + 'px';
-      rx += (mx - rx) * .12;
-      ry += (my - ry) * .12;
-      ring.style.left = rx + 'px';
-      ring.style.top  = ry + 'px';
-      requestAnimationFrame(animCursor);
-    }
-    animCursor();
- 
-    document.querySelectorAll('a,button,input').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cur.style.width  = cur.style.height  = '22px';
-        ring.style.width = ring.style.height = '60px';
-        ring.style.opacity = '.3';
-      });
-      el.addEventListener('mouseleave', () => {
-        cur.style.width  = cur.style.height  = '14px';
-        ring.style.width = ring.style.height = '40px';
-        ring.style.opacity = '.6';
-      });
-    });
-  // Ring follows with smooth lag via RAF
-  (function loop() {
-    rx += (mx - rx) * 0.11;
-    ry += (my - ry) * 0.11;
-    curR.style.left = rx + 'px';
-    curR.style.top  = ry + 'px';
-    requestAnimationFrame(loop);
-  })();
-
-  // Expand on interactive elements
-  document.querySelectorAll('a, button, .sp-card, .perk, .gal-item, .tc, .cs-pill, .wa-chip').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cur.style.width  = '20px';
-      cur.style.height = '20px';
-      curR.style.width  = '58px';
-      curR.style.height = '58px';
-    });
-    el.addEventListener('mouseleave', () => {
-      cur.style.width  = '10px';
-      cur.style.height = '10px';
-      curR.style.width  = '38px';
-      curR.style.height = '38px';
-    });
-  });
-}
 
 /* NAV */
 const nav=document.getElementById('nav');
