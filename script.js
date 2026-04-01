@@ -1,6 +1,27 @@
 /* CURSOR */
 /* ── CUSTOM CURSOR (mouse devices only) ── */
+if (window.innerWidth <= 768) {
 
+  const cur = document.getElementById('cur');
+
+  // Follow finger
+  document.addEventListener('touchmove', (e) => {
+    let touch = e.touches[0];
+
+    cur.style.left = touch.clientX + 'px';
+    cur.style.top = touch.clientY + 'px';
+  });
+
+  // Tap effect
+  document.addEventListener('touchstart', () => {
+    cur.style.transform = 'translate(-50%, -50%) scale(1.8)';
+  });
+
+  document.addEventListener('touchend', () => {
+    cur.style.transform = 'translate(-50%, -50%) scale(1)';
+  });
+
+}
 /* NAV */
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
