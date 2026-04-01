@@ -11,6 +11,11 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--white);color:va
 #cur, #curR {
   will-change: transform;
 }
+@media (max-width: 768px) {
+  #cur, #curR {
+    display: none !important;
+  }
+}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#f5f5f5}::-webkit-scrollbar-thumb{background:var(--orange);border-radius:2px}
 
 /* NAV */
