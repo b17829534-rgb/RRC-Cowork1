@@ -695,113 +695,45 @@ footer{background:#0f0b06;padding:76px 64px 36px}
 ========================= */
 
 .nav-hamburger{
-  display:none;
-  flex-direction:column;
-  gap:5px;
-  background:none;
-  border:none;
-  cursor:pointer;
-  padding:4px;
-  z-index:1100;
+  display:none;flex-direction:column;gap:5px;
+  background:none;border:none;cursor:pointer;padding:4px;z-index:1100;
 }
-
 .nav-hamburger span{
-  display:block;
-  width:24px;
-  height:2px;
-  background:#fff;
-  border-radius:2px;
-  transition:all .35s ease;
+  display:block;width:24px;height:2px;
+  background:var(--white);border-radius:2px;
+  transition:transform .35s,opacity .35s,background .3s;
 }
+nav.scrolled .nav-hamburger span{background:var(--ink)}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-/* Dark icon on scroll */
-nav.scrolled .nav-hamburger span{
-  background:#111;
-}
-
-/* Hamburger animation */
-.nav-hamburger.open span:nth-child(1){
-  transform:translateY(7px) rotate(45deg);
-}
-
-.nav-hamburger.open span:nth-child(2){
-  opacity:0;
-}
-
-.nav-hamburger.open span:nth-child(3){
-  transform:translateY(-7px) rotate(-45deg);
-}
-
-/* =========================
-   MOBILE DRAWER
-========================= */
-
+/* Mobile drawer */
 .nav-drawer{
-  position:fixed;
-  inset:0;
-  background:#fff;
+  position:fixed;inset:0;
+  background:var(--white);
   z-index:1050;
-
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
   transform:translateX(100%);
   transition:transform .45s cubic-bezier(.77,0,.18,1);
 }
-
-.nav-drawer.open{
-  transform:translateX(0);
-}
-
-/* Drawer links */
+.nav-drawer.open{transform:translateX(0)}
 .nav-drawer a{
-  font-family:'DM Sans',sans-serif;
-  font-weight:800;
-  font-size:2rem;
-  letter-spacing:-0.02em;
-
-  color:#111;
-  text-decoration:none;
-
-  padding:10px 0;
-  width:80%;
-  text-align:center;
-
-  border-bottom:1px solid #e5e5e5;
-  transition:color .3s ease;
+  font-family:'DM Sans',sans-serif;font-weight:800;
+  font-size:2rem;letter-spacing:-.02em;
+  color:var(--ink);text-decoration:none;
+  padding:10px 0;border-bottom:1px solid var(--border);
+  width:80%;text-align:center;
+  transition:color .3s;
 }
-
-.nav-drawer a:hover{
-  color:orange;
-}
-
-/* CTA Button */
+.nav-drawer a:hover{color:var(--orange)}
 .nav-drawer a.drawer-cta{
-  margin-top:20px;
-  background:orange;
-  color:#fff !important;
-
-  border-radius:6px;
-  padding:16px 32px;
-  border:none;
-  font-size:1rem;
+  margin-top:20px;background:var(--orange);color:var(--white)!important;
+  border-radius:6px;padding:16px 32px;border:none;font-size:1rem;
 }
-
-/* Close button */
 .nav-drawer-close{
-  position:absolute;
-  top:24px;
-  right:28px;
-
-  background:none;
-  border:none;
-
-  font-size:1.5rem;
-  cursor:pointer;
-  color:#666;
+  position:absolute;top:24px;right:28px;
+  background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--muted);
 }
 
 /* ── TABLET (≤ 1024px) ── */
