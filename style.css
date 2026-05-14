@@ -330,6 +330,26 @@ nav.scrolled .nav-links a{color:var(--muted)}
   }
 
 }
+@media(max-width:600px){
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-family:'Montserrat'!important;
+  }
+
+  p,
+  span,
+  a,
+  li,
+  button{
+    font-family:'Open Sans' !important;
+  }
+
+}
 @media(max-width:1024px){
   .amenities{padding:80px 28px}
   .am-row{grid-template-columns:1fr;gap:48px;margin-bottom:72px}
