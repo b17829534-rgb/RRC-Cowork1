@@ -273,55 +273,15 @@
 ══════════════════════════════════════ */
 
 /* Root container — fixed bottom-right */
-/* .wa-root{
+.wa-root{
   position:fixed;
   bottom:32px;right:32px;
   z-index:9990;
   display:flex;flex-direction:column;align-items:flex-end;
   gap:16px;
   font-family:'Plus Jakarta Sans',sans-serif;
-} */
-  .wa-root{
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  z-index: 9990;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 16px;
-
-  font-family: 'Plus Jakarta Sans', sans-serif;
-
-  /* IMPORTANT */
-  width: auto;
-  height: auto;
-  pointer-events: none;
 }
 
-/* /* Only clickable elements */
-.wa-root .wa-btn,
-.wa-root a,
-.wa-root button{
-  pointer-events: auto;
-}
-.wa-popup{
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-
-  transform: translateY(10px);
-  transition: 0.3s;
-}
-
-.wa-popup.active{
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-
-  transform: translateY(0);
-} 
 /* ── FAB BUTTON ── */
 .wa-fab{
   width:62px;height:62px;border-radius:50%;
@@ -1535,8 +1495,8 @@ document.getElementById("csSubmit").addEventListener("click", function () {
         <a href="#" class="soc">𝕏</a><a href="#" class="soc">in</a><a href="#" class="soc">ig</a><a href="#" class="soc">yt</a>
       </div>
     </div>
-    <div><div class="foot-col-title"style="font-family: 'Open sans'">Spaces</div><ul class="foot-links"><li><a href="#spaces">Private Cabin</a></li><li><a href="#spaces">Meeting Room</a></li><li><a href="#spaces">Day Pass</a></li><li><a href="#spaces">Student Desk</a></li><li><a href="#spaces">Hot Desk</a></li></ul></div>
-    <div><div class="foot-col-title"style="font-family: 'Open sans'">Company</div><ul class="foot-links"><li><a href="#about">About Us</a></li><li><a href="#">Community</a></li><li><a href="#">Gallery</a></li><li><a href="#">Our Spaces</a></li><li><a href="#"></a></li></ul></div>
+    <div><div class="foot-col-title"style="font-family: 'Open sans'">Spaces</div><ul class="foot-links"><li><a href="#">Hot Desks</a></li><li><a href="#">Dedicated Desks</a></li><li><a href="#">Private Offices</a></li><li><a href="#">Meeting Rooms</a></li><li><a href="#">Event Spaces</a></li></ul></div>
+    <div><div class="foot-col-title"style="font-family: 'Open sans'">Company</div><ul class="foot-links"><li><a href="#">About Us</a></li><li><a href="#">Community</a></li><li><a href="#">Gallery</a></li><li><a href="#">Our Spaces</a></li><li><a href="#"></a></li></ul></div>
     <div><div class="foot-col-title"style="font-family: 'Open sans'">Contact US</div><ul class="foot-links"><li><a href="#">Thanjavur</a></li><li><a href="#">+91 8015 8045 80</a></li><li><a href="#"> info@rrcworkspace.com</a></li></ul></div>
   </div>
   <div class="foot-bottom">
