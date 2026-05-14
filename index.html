@@ -306,7 +306,22 @@
 .wa-root button{
   pointer-events: auto;
 }
+.wa-popup{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+.wa-popup.active{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateY(0);
+}
 /* ── FAB BUTTON ── */
 .wa-fab{
   width:62px;height:62px;border-radius:50%;
