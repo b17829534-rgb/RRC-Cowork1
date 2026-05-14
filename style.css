@@ -1296,3 +1296,36 @@ nav.scrolled .nav-hamburger span{background:var(--ink)}
 .acard:hover .atag {
   background:var(--orange-pale); border-color:rgba(242,101,34,.25); color:var(--orange-dk);
 }
+body{
+  overflow-x:hidden;
+  position:relative;
+}
+
+body *{
+  pointer-events:auto;
+}
+
+.whatsapp-icon{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:99999 !important;
+
+  width:60px;
+  height:60px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .whatsapp-icon{
+    right:15px;
+    bottom:15px;
+  }
+
+}
