@@ -280,8 +280,9 @@
   display:flex;flex-direction:column;align-items:flex-end;
   gap:16px;
   font-family:'Plus Jakarta Sans',sans-serif;
+  pointer-events:none;
+  background: transparent;
 }
-
 /* ── FAB BUTTON ── */
 .wa-fab{
   width:62px;height:62px;border-radius:50%;
@@ -342,19 +343,35 @@
 .wa-fab:hover .wa-tooltip{opacity:1;transform:translateY(-50%) translateX(0)}
 
 /* ── CHAT PANEL ── */
+
+
 .wa-panel{
   width:340px;
   background:#fff;
   border-radius:18px;
   box-shadow:0 20px 64px rgba(0,0,0,.18),0 4px 16px rgba(0,0,0,.08);
   overflow:hidden;
+
   /* Hidden state */
   opacity:0;
-  transform:translateY(20px) scale(.95);
+  visibility:hidden;
   pointer-events:none;
-  transition:opacity .35s cubic-bezier(.77,0,.18,1),
-             transform .35s cubic-bezier(.77,0,.18,1);
+
+  transform:translateY(20px) scale(.95);
+
+  transition:
+    opacity .35s cubic-bezier(.77,0,.18,1),
+    transform .35s cubic-bezier(.77,0,.18,1),
+    visibility .35s;
+
   transform-origin:bottom right;
+}
+
+.wa-panel.open{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0) scale(1);
+  pointer-events:auto;
 }
 .wa-panel.open{
   opacity:1;transform:translateY(0) scale(1);pointer-events:all;
