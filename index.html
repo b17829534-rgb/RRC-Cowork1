@@ -273,15 +273,45 @@
 ══════════════════════════════════════ */
 
 /* Root container — fixed bottom-right */
-.wa-root{
+/* .wa-root{
   position:fixed;
   bottom:32px;right:32px;
   z-index:9990;
   display:flex;flex-direction:column;align-items:flex-end;
   gap:16px;
   font-family:'Plus Jakarta Sans',sans-serif;
-  pointer-events:none;
+  pointer-events:auto;
   background: transparent;
+} */
+ .wa-root{
+  position:fixed;
+  bottom:32px;
+  right:32px;
+  z-index:9990;
+
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:16px;
+
+  font-family:'Plus Jakarta Sans',sans-serif;
+
+  /* Allow body clicks */
+  pointer-events:all;
+}
+
+/* WhatsApp button clickable */
+.wa-btn{
+  pointer-events:auto;
+}
+
+/* Panel clickable only when open */
+.wa-panel{
+  pointer-events:auto;
+}
+
+.wa-panel.open{
+  pointer-events:auto;
 }
 /* ── FAB BUTTON ── */
 .wa-fab{
@@ -363,16 +393,17 @@
     opacity .35s cubic-bezier(.77,0,.18,1),
     transform .35s cubic-bezier(.77,0,.18,1),
     visibility .35s;
-
+display:none;
   transform-origin:bottom right;
 }
 
-.wa-panel.open{
+ .wa-panel.open{
   opacity:1;
   visibility:visible;
   transform:translateY(0) scale(1);
-  pointer-events:auto;
-}
+  pointer-events:none;
+  display: block;
+} 
 .wa-panel.open{
   opacity:1;transform:translateY(0) scale(1);pointer-events:all;
 }
